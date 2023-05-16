@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>nili</title>
+        <meta charset="UTF-8" >
+        <link rel="icon" type="image/png" href="WhatsApp Image 2023-04-05 at 17.22.00.jpeg">
+        <i class='fa fa-circle fa-5x'></i>
+        <link rel="stylesheet" href="sign.css">
+    </head>
+    <body>
+
+        <!-- partie sign up-->
+        <div class="container" id="container">
+	   <div class="form-container sign-up-container">
+		<form action="cos.html" onsubmit="return signup()" id="form">
+			<h1>Create Account</h1>
+			<span> use your email for registration</span>
+            <input type="text" placeholder="first name" id="first" />
+			<span id="s1" style="color: red;"></span>
+			<input type="text" placeholder="Name" id="name" />
+			<span id="s2" style="color: red;"></span>
+			<input type="email" placeholder="Email" id="email" />
+			<span id="s3" style="color: red;"></span>
+			<input type="password" placeholder="Password" id="password" />
+			<span id="s4" style="color: red;"></span>
+			<button onclick="add()">Sign Up</button>
+		</form>
+    	</div>
+        
+        <!-- partie sign in-->
+        <div class="form-container sign-in-container">
+		<form action="cos.html" onsubmit="return signin()">
+			<h1>Sign in</h1>
+			<span> use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" /> 
+            <input type="checkbox" onclick="showpass()" id="logCheck" />
+            <label for="logCheck" class="text">show password</label> 
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+    <div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="sign.js"></script>
+    </body>
+</html>
